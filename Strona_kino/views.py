@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
+from .models import Film
 from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
