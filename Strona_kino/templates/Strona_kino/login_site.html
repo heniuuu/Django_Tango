@@ -1,0 +1,20 @@
+{% extends 'Strona_kino/base.html' %}
+
+{% block content %}
+<form>
+  <div class="form-group">
+    <label for="przykladowyEmail">Email</label>
+    <input type="email" class="form-control" id="przykladowyEmail" aria-describedby="podpowiedzEmail" placeholder="Wpisz Email">
+    <small id="podpowiedzEmail" class="form-text text-muted">W powyższym polu wpisujesz swój adres email.</small>
+  </div>
+  <div class="form-group">
+    <label for="przykladoweHaslo">Hasło</label>
+    <input type="password" class="form-control" id="przykladoweHaslo" placeholder="Wpisz hasło">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="checkbox">
+    <label class="form-check-label" for="checkbox">Chce się zarejestrować!</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Zaloguj się</button>
+</form>
+{% endblock %}
