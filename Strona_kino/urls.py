@@ -1,10 +1,11 @@
 from . import views
-
 from django.urls import path, include
+from .views import FilmsLista, FilmsDetale
 
 urlpatterns = [
-    path('', views.main_site, name='main_site'),
-    path('login', views.login_site, name='login_site')
+    path('', FilmsLista.as_view, name='Films_Lista'),
+    path('login', views.login_site, name='login_site'),
+    # path('film/', FilmsLista.as_view, name='Films_Lista.html'),
 ]
 
 

@@ -8,7 +8,7 @@ from Strona_kino.models import Film
 
 
 def main_site(request):
-        return render(request, 'Strona_kino/main_site.html', )
+    return render(request, 'Strona_kino/main_site.html', )
 
 def login_site(request):
     return render(request, 'Strona_kino/login_site.html', )
